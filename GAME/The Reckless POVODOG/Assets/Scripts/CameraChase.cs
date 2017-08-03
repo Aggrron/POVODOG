@@ -7,7 +7,7 @@ public class CameraChase : MonoBehaviour {
 	public GameObject player;
 
 	void FixedUpdate(){
-		transform.position = new Vector3 (player.transform.position.x, player.transform.position.y, -10f);
+		transform.position = new Vector3 (player.transform.position.x, player.transform.position.y, -20f);
 	}
 
 }

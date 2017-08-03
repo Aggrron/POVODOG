@@ -29,3 +29,4 @@ D:\POVODOG REP\POVODOG\GAME\The Reckless POVODOG\Temp\bin\Debug\UnityEngine.Holo
 D:\POVODOG REP\POVODOG\GAME\The Reckless POVODOG\Temp\bin\Debug\UnityEngine.VR.xml
 D:\POVODOG REP\POVODOG\GAME\The Reckless POVODOG\obj\Debug\Assembly-CSharp.dll
 D:\POVODOG REP\POVODOG\GAME\The Reckless POVODOG\obj\Debug\Assembly-CSharp.pdb
+D:\POVODOG REP\POVODOG\GAME\The Reckless POVODOG\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb

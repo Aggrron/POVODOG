@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\CameraChase.cs" />
+     <Compile Include="Assets\Scripts\Flip.cs" />
      <Compile Include="Assets\Scripts\PlayerCNTRL.cs" />
      <Compile Include="Assets\Scripts\Testing.cs" />
  <Reference Include="UnityEngine.UI">
@@ -70,6 +71,10 @@
  <Reference Include="UnityEngine.VR">
  <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{492F0128-63D5-0907-54D7-E70DA6B6F885}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

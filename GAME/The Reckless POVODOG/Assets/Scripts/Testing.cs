@@ -21,9 +21,6 @@ public class Testing : MonoBehaviour {
 	}
 	void FixedUpdate()
 	{
-		if (Input.GetKeyDown (KeyCode.A)) 
-		{
-			Debug.LogAssertion ("PRESSING A IS NOT ALLOWED");
-		}
+		
 	}
 }
