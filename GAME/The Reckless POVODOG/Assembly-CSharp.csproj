@@ -47,7 +47,6 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\CameraChase.cs" />
-     <Compile Include="Assets\Scripts\Flip.cs" />
      <Compile Include="Assets\Scripts\PlayerCNTRL.cs" />
      <Compile Include="Assets\Scripts\Testing.cs" />
  <Reference Include="UnityEngine.UI">
