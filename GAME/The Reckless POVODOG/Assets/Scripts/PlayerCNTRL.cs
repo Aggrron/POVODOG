@@ -8,6 +8,7 @@ public class PlayerCNTRL : MonoBehaviour {
 	public float speed = 5f;
 	public float jumpForce;
 	private bool faceRight = true;
+	private bool ladder = false;
 	void Start ()
 	{
 		rb = GetComponent<Rigidbody2D> ();	
@@ -16,24 +17,15 @@ public class PlayerCNTRL : MonoBehaviour {
 		
 	}
 	void FixedUpdate(){
-		JumpChanging ();
+		
 		float move =  Input.GetAxis("Horizontal");
 		rb.velocity = new Vector2(move * speed * Time.deltaTime, rb.velocity.y);
 		if (Input.GetKeyDown (KeyCode.Space)) {
 			rb.velocity = new Vector2 (rb.velocity.x, jumpForce);
 
+
+
 		}
 	}
-	void JumpChanging()
-	{
-		if (Input.GetKeyDown (KeyCode.Z)) 
-		{
-			jumpForce = jumpForce - 1f;
-		}
-		if (Input.GetKeyDown (KeyCode.X)) 
-		{
-			jumpForce = jumpForce + 1f;
-		}
-	
-	}
+
 }
