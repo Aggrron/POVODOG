@@ -29,3 +29,36 @@ D:\POVODOG REP\POVODOG\GAME\The Reckless POVODOG\Temp\bin\Debug\UnityEngine.Holo
 D:\POVODOG REP\POVODOG\GAME\The Reckless POVODOG\Temp\bin\Debug\UnityEngine.VR.xml
 D:\POVODOG REP\POVODOG\GAME\The Reckless POVODOG\obj\Debug\Assembly-CSharp.dll
 D:\POVODOG REP\POVODOG\GAME\The Reckless POVODOG\obj\Debug\Assembly-CSharp.pdb
+D:\Pasha self\Всё для создания игр\POVODOG\GAME\POVODOG\GAME\The Reckless POVODOG\Temp\bin\Debug\Assembly-CSharp.dll
+D:\Pasha self\Всё для создания игр\POVODOG\GAME\POVODOG\GAME\The Reckless POVODOG\Temp\bin\Debug\Assembly-CSharp.pdb
+D:\Pasha self\Всё для создания игр\POVODOG\GAME\POVODOG\GAME\The Reckless POVODOG\Temp\bin\Debug\nunit.framework.dll
+D:\Pasha self\Всё для создания игр\POVODOG\GAME\POVODOG\GAME\The Reckless POVODOG\Temp\bin\Debug\UnityEditor.dll
+D:\Pasha self\Всё для создания игр\POVODOG\GAME\POVODOG\GAME\The Reckless POVODOG\Temp\bin\Debug\UnityEngine.Analytics.dll
+D:\Pasha self\Всё для создания игр\POVODOG\GAME\POVODOG\GAME\The Reckless POVODOG\Temp\bin\Debug\UnityEngine.dll
+D:\Pasha self\Всё для создания игр\POVODOG\GAME\POVODOG\GAME\The Reckless POVODOG\Temp\bin\Debug\UnityEngine.HoloLens.dll
+D:\Pasha self\Всё для создания игр\POVODOG\GAME\POVODOG\GAME\The Reckless POVODOG\Temp\bin\Debug\UnityEngine.Networking.dll
+D:\Pasha self\Всё для создания игр\POVODOG\GAME\POVODOG\GAME\The Reckless POVODOG\Temp\bin\Debug\UnityEngine.TestRunner.dll
+D:\Pasha self\Всё для создания игр\POVODOG\GAME\POVODOG\GAME\The Reckless POVODOG\Temp\bin\Debug\UnityEngine.Timeline.dll
+D:\Pasha self\Всё для создания игр\POVODOG\GAME\POVODOG\GAME\The Reckless POVODOG\Temp\bin\Debug\UnityEngine.UI.dll
+D:\Pasha self\Всё для создания игр\POVODOG\GAME\POVODOG\GAME\The Reckless POVODOG\Temp\bin\Debug\Mono.Cecil.dll
+D:\Pasha self\Всё для создания игр\POVODOG\GAME\POVODOG\GAME\The Reckless POVODOG\Temp\bin\Debug\Unity.SerializationLogic.dll
+D:\Pasha self\Всё для создания игр\POVODOG\GAME\POVODOG\GAME\The Reckless POVODOG\Temp\bin\Debug\Unity.DataContract.dll
+D:\Pasha self\Всё для создания игр\POVODOG\GAME\POVODOG\GAME\The Reckless POVODOG\Temp\bin\Debug\ExCSS.Unity.dll
+D:\Pasha self\Всё для создания игр\POVODOG\GAME\POVODOG\GAME\The Reckless POVODOG\Temp\bin\Debug\Unity.Legacy.NRefactory.dll
+D:\Pasha self\Всё для создания игр\POVODOG\GAME\POVODOG\GAME\The Reckless POVODOG\Temp\bin\Debug\Unity.UNetWeaver.dll
+D:\Pasha self\Всё для создания игр\POVODOG\GAME\POVODOG\GAME\The Reckless POVODOG\Temp\bin\Debug\Unity.CecilTools.dll
+D:\Pasha self\Всё для создания игр\POVODOG\GAME\POVODOG\GAME\The Reckless POVODOG\Temp\bin\Debug\Mono.Cecil.Pdb.dll
+D:\Pasha self\Всё для создания игр\POVODOG\GAME\POVODOG\GAME\The Reckless POVODOG\Temp\bin\Debug\Mono.Cecil.Mdb.dll
+D:\Pasha self\Всё для создания игр\POVODOG\GAME\POVODOG\GAME\The Reckless POVODOG\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
+D:\Pasha self\Всё для создания игр\POVODOG\GAME\POVODOG\GAME\The Reckless POVODOG\Temp\bin\Debug\UnityEngine.xml
+D:\Pasha self\Всё для создания игр\POVODOG\GAME\POVODOG\GAME\The Reckless POVODOG\Temp\bin\Debug\UnityEditor.xml
+D:\Pasha self\Всё для создания игр\POVODOG\GAME\POVODOG\GAME\The Reckless POVODOG\Temp\bin\Debug\UnityEngine.UI.xml
+D:\Pasha self\Всё для создания игр\POVODOG\GAME\POVODOG\GAME\The Reckless POVODOG\Temp\bin\Debug\UnityEngine.Networking.xml
+D:\Pasha self\Всё для создания игр\POVODOG\GAME\POVODOG\GAME\The Reckless POVODOG\Temp\bin\Debug\UnityEngine.TestRunner.xml
+D:\Pasha self\Всё для создания игр\POVODOG\GAME\POVODOG\GAME\The Reckless POVODOG\Temp\bin\Debug\nunit.framework.xml
+D:\Pasha self\Всё для создания игр\POVODOG\GAME\POVODOG\GAME\The Reckless POVODOG\Temp\bin\Debug\UnityEngine.Timeline.xml
+D:\Pasha self\Всё для создания игр\POVODOG\GAME\POVODOG\GAME\The Reckless POVODOG\Temp\bin\Debug\UnityEngine.Analytics.xml
+D:\Pasha self\Всё для создания игр\POVODOG\GAME\POVODOG\GAME\The Reckless POVODOG\Temp\bin\Debug\UnityEngine.HoloLens.xml
+D:\Pasha self\Всё для создания игр\POVODOG\GAME\POVODOG\GAME\The Reckless POVODOG\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+D:\Pasha self\Всё для создания игр\POVODOG\GAME\POVODOG\GAME\The Reckless POVODOG\obj\Debug\Assembly-CSharp.dll
+D:\Pasha self\Всё для создания игр\POVODOG\GAME\POVODOG\GAME\The Reckless POVODOG\obj\Debug\Assembly-CSharp.pdb

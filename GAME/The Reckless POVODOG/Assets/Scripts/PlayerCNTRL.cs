@@ -7,8 +7,8 @@ public class PlayerCNTRL : MonoBehaviour {
 
 	public float speed = 5f;
 	public float jumpForce;
-	private bool faceRight = true;
-	private bool ladder = false;
+	//private bool faceRight = true;
+	//private bool ladder = false;
 	void Start ()
 	{
 		rb = GetComponent<Rigidbody2D> ();	

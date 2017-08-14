@@ -25,7 +25,6 @@ public class Ladder : MonoBehaviour {
 		if (obj.gameObject.tag == "Ladder") 
 		{
 			ladder = false;
-
 		}
 	}
 	void FixedUpdate(){
@@ -33,8 +32,13 @@ public class Ladder : MonoBehaviour {
 		if (ladder) {
 			float moveUp = Input.GetAxis ("Vertical") * ladderSpeed;
 			moveUp = moveUp * Time.deltaTime;
-				rb.velocity = new Vector2 (0, moveUp);
-			}
+			rb.velocity = new Vector2 (0, moveUp);
+			rb.gravityScale = 0f;
+
+		} else {
+			rb.gravityScale = 5f;
+		
+		}
 //			float moveUP = Input.GetAxis ("Vertical");
 //			rb.velocity = new Vector2 (rb.velocity.x, moveUP * ladderSpeed * Time.deltaTime);
 		} 
