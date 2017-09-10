@@ -32,6 +32,7 @@ public class PlayerCNTRL : MonoBehaviour {
 			anim.Play ("Jump", -1, 0f);
 		
 		}
+	
 		if (move > 0 && !faceRight)
 			flip ();
 		else if (move < 0 && faceRight)
@@ -48,6 +49,7 @@ public class PlayerCNTRL : MonoBehaviour {
 	{
 		rb.velocity = new Vector2 (rb.velocity.x, jumpForce);
 	}
+
 
 	}
 	

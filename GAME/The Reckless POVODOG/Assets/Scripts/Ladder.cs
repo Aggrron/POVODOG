@@ -33,7 +33,7 @@ public class Ladder : MonoBehaviour {
 			float moveUp = Input.GetAxis ("Vertical") * ladderSpeed;
 			moveUp = moveUp * Time.deltaTime;
 			rb.velocity = new Vector2 (0, moveUp);
-			rb.gravityScale = 0f;
+			//rb.gravityScale = 0f;
 
 		} else {
 			rb.gravityScale = 5f;
