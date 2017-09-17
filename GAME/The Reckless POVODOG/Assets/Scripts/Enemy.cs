@@ -5,15 +5,24 @@ using UnityEngine;
 public class Enemy : MonoBehaviour {
 
 	private Rigidbody2D rb;
-	public Transform endPoint;
-	public Vector2 position;
-	void Start() {
-		rb = GetComponent <Rigidbody2D>();
-	}
-	void FixedUpdate(){
-		position = endPoint.localPosition;
-	//rb.velocity = new Vector2 (position, 0f);
-	
-	}
+	Renderer myRend;
+	public float esm; // Enemy Speed Movement
+	public float eld; // Enemy Look Distance
+	public float targetDistance; // Our player distance
+	public Transform fpsTarget;
 
+	void Start()
+	{
+		eld = 10f;
+		myRend = GetComponent<Renderer> ();
+		rb = GetComponent<Rigidbody2D> ();
+	}
+	void FixedUpdate()
+	{
+		targetDistance = Vector2.Distance (fpsTarget.position, transform.position);
+		if (targetDistance < eld) 
+		{
+			rb.velocity = new Vector2()
+		}
+	}
 }
