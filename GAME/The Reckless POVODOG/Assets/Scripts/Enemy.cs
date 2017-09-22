@@ -9,7 +9,9 @@ public class Enemy : MonoBehaviour {
 	public float esm; // Enemy Speed Movement
 	public float eld; // Enemy Look Distance
 	public float targetDistance; // Our player distance
-	public Transform fpsTarget;
+	public Transform fpsTarget;//
+	private bool faceRight = true;
+
 
 	void Start()
 	{
@@ -22,7 +24,16 @@ public class Enemy : MonoBehaviour {
 		targetDistance = Vector2.Distance (fpsTarget.position, transform.position);
 		if (targetDistance < eld) 
 		{
-			rb.velocity = new Vector2()
+			transform.position = Vector2.MoveTowards (transform.position, fpsTarget.position, Time.deltaTime * esm);
 		}
+		if (transform.position.x < fpsTarget.transform.position.x && faceRight)
+			flip ();
+		else if (transform.position.x > fpsTarget.transform.position.x && !faceRight)
+			flip ();
+	}
+	void flip()
+	{
+		faceRight = !faceRight;
+		transform.localScale = new Vector3 (transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
 	}
 }

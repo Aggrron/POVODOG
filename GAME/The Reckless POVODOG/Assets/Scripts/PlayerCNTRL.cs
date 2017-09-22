@@ -39,6 +39,9 @@ public class PlayerCNTRL : MonoBehaviour {
 			flip ();
 		anim.SetFloat ("Speed", Mathf.Abs (move));
 		anim.SetBool ("OnlyUp", isGrounded);
+
+		if (Input.GetKeyDown (KeyCode.Mouse0))
+			anim.Play ("Attack", -1, 0f);
 	}
 	void flip()
 	{
@@ -49,6 +52,8 @@ public class PlayerCNTRL : MonoBehaviour {
 	{
 		rb.velocity = new Vector2 (rb.velocity.x, jumpForce);
 	}
+		
+		
 
 
 	}
