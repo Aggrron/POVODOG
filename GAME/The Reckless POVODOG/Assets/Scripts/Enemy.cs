@@ -12,11 +12,13 @@ public class Enemy : MonoBehaviour {
 	public Transform fpsTarget;//
 	private bool faceRight = true;
 	private Animator anim;
+	public float health;
 
 
 	void Start()
 	{
 		eld = 10f;
+		health = 10f;
 		myRend = GetComponent<Renderer> ();
 		rb = GetComponent<Rigidbody2D> ();
 		anim = GetComponent<Animator> ();
@@ -39,11 +41,24 @@ public class Enemy : MonoBehaviour {
 			anim.Play ("BigMouth_Attack");
 		}
 
+
+
 		anim.SetFloat ("MonsterSpeed", esm);
 	}
 	void flip()
 	{
 		faceRight = !faceRight;
 		transform.localScale = new Vector3 (transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
+
+	}
+
+	void OnTriggerEnter(Collider other)
+	{
+		if (other.tag == "Attack") 
+		{
+			health = health - 5f;
+			Debug.Log ("UDAR");
+		}
+
 	}
 }
