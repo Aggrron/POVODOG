@@ -40,15 +40,15 @@ public class PlayerCNTRL : MonoBehaviour {
 		anim.SetFloat ("Speed", Mathf.Abs (move));
 		anim.SetBool ("OnlyUp", isGrounded);
 
-		if (Input.GetKeyDown (KeyCode.Mouse0))
+		if (Input.GetKeyDown (KeyCode.Mouse0))  // Анимация атаки
 			anim.Play ("Attack", -1, 0f);
 	}
-	void flip()
+	void flip()// Поворот
 	{
 		faceRight = !faceRight;
 		transform.localScale = new Vector2 (transform.localScale.x * -1, transform.localScale.y);
 	}
-	void Jump()
+	void Jump()//Прыжок
 	{
 		rb.velocity = new Vector2 (rb.velocity.x, jumpForce);
 	}
