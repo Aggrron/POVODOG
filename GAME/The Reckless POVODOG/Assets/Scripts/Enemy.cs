@@ -11,6 +11,7 @@ public class Enemy : MonoBehaviour {
 	public float targetDistance; // Our player distance
 	public Transform fpsTarget;//
 	private bool faceRight = true;
+	private Animator anim;
 
 
 	void Start()
@@ -18,18 +19,27 @@ public class Enemy : MonoBehaviour {
 		eld = 10f;
 		myRend = GetComponent<Renderer> ();
 		rb = GetComponent<Rigidbody2D> ();
+		anim = GetComponent<Animator> ();
 	}
 	void FixedUpdate()
 	{
+		esm = 0f;
 		targetDistance = Vector2.Distance (fpsTarget.position, transform.position);
-		if (targetDistance < eld) 
-		{
+		if (targetDistance < eld) {
+			esm = 6f;
 			transform.position = Vector2.MoveTowards (transform.position, fpsTarget.position, Time.deltaTime * esm);
-		}
+		} else
+			esm = 0f;
 		if (transform.position.x < fpsTarget.transform.position.x && faceRight)
 			flip ();
 		else if (transform.position.x > fpsTarget.transform.position.x && !faceRight)
 			flip ();
+		if (targetDistance < eld / 2) 
+		{
+			anim.Play ("BigMouth_Attack");
+		}
+
+		anim.SetFloat ("MonsterSpeed", esm);
 	}
 	void flip()
 	{

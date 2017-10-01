@@ -4,45 +4,23 @@ using UnityEngine;
 
 public class Ladder : MonoBehaviour {
 
-	private Rigidbody2D rb;
-	private bool ladder = false;
-	public float ladderSpeed;
-	void Start()
-	{
-		rb = GetComponent<Rigidbody2D> ();
-	}
-	void OnTriggerStay2D(Collider2D obj)
-	{
-		if (obj.gameObject.tag == "Ladder") 
-		{
-			ladder = true;
-			
-		}
 
+	public float ladderSpeed = 10f;
+
+	void Start () {
 	}
-	void OnTriggerExit2D(Collider2D obj)
-	{
-		if (obj.gameObject.tag == "Ladder") 
-		{
-			ladder = false;
-		}
-	}
-	void FixedUpdate(){
 	
-		if (ladder) {
-			float moveUp = Input.GetAxis ("Vertical") * ladderSpeed;
-			moveUp = moveUp * Time.deltaTime;
-			rb.velocity = new Vector2 (0, moveUp);
-			//rb.gravityScale = 0f;
-
-		} else {
-			rb.gravityScale = 5f;
-		
+	void OnTriggerStay2D(Collider2D other)
+	{
+		if (other.tag == "Player" && Input.GetKey (KeyCode.W)) {
+			other.GetComponent<Rigidbody2D> ().velocity = new Vector2 (0, ladderSpeed);
+		} else if (other.tag == "Player" && Input.GetKey (KeyCode.S)) {
+			other.GetComponent<Rigidbody2D> ().velocity = new Vector2 (0, -ladderSpeed);
+		} else 
+		{
+			other.GetComponent<Rigidbody2D> ().velocity = new Vector2 (0, 1);
 		}
-//			float moveUP = Input.GetAxis ("Vertical");
-//			rb.velocity = new Vector2 (rb.velocity.x, moveUP * ladderSpeed * Time.deltaTime);
-		} 
-			
+	
 	}
 
-
+}
