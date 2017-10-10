@@ -4,31 +4,31 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour {
 
-	private Rigidbody2D rb;
-	Renderer myRend;
+
 	public float esm; // Enemy Speed Movement
 	public float eld; // Enemy Look Distance
 	public float targetDistance; // Our player distance
 	public Transform fpsTarget;//
 	private bool faceRight = true;
 	private Animator anim;
-	public float health;
+
 
 
 	void Start()
 	{
 		eld = 10f;
-		health = 10f;
-		myRend = GetComponent<Renderer> ();
-		rb = GetComponent<Rigidbody2D> ();
 		anim = GetComponent<Animator> ();
+	}
+	void Update()
+	{
+		anim.SetFloat ("MonsterSpeed", esm);
 	}
 	void FixedUpdate()
 	{
-		esm = 0f;
+		
 		targetDistance = Vector2.Distance (fpsTarget.position, transform.position);
 		if (targetDistance < eld) {
-			esm = 6f;
+			esm = 5f;
 			transform.position = Vector2.MoveTowards (transform.position, fpsTarget.position, Time.deltaTime * esm);
 		} else
 			esm = 0f;
@@ -36,14 +36,14 @@ public class Enemy : MonoBehaviour {
 			flip ();
 		else if (transform.position.x > fpsTarget.transform.position.x && !faceRight)
 			flip ();
-		if (targetDistance < eld / 2) 
-		{
-			anim.Play ("BigMouth_Attack");
-		}
+//		if (targetDistance < eld / 2) 
+//		{
+//			anim.Play ("BigMouth_Attack");
+//		}
 
 
 
-		anim.SetFloat ("MonsterSpeed", esm);
+
 	}
 	void flip()
 	{
@@ -52,11 +52,10 @@ public class Enemy : MonoBehaviour {
 
 	}
 
-	void OnTriggerEnter(Collider other)
+	void OnTriggerEnter2D(Collider2D other)
 	{
 		if (other.tag == "Attack") 
 		{
-			health = health - 5f;
 			Debug.Log ("UDAR");
 		}
 

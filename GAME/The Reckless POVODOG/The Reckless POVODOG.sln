@@ -1,9 +1,9 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The Reckless POVODOG", "The Reckless POVODOG.csproj", "{3AD95364-2F84-DB56-C7AB-9A39FA7913C1}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The Reckless POVODOG", "Assembly-CSharp-firstpass.csproj", "{492F0128-63D5-0907-54D7-E70DA6B6F885}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The Reckless POVODOG.Plugins", "The Reckless POVODOG.Plugins.csproj", "{9647D3FC-A5B8-5535-FF41-1872C1CB8066}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The Reckless POVODOG", "Assembly-CSharp.csproj", "{35528CFE-2378-94FA-8171-AD7188E46AC8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,16 +11,19 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3AD95364-2F84-DB56-C7AB-9A39FA7913C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3AD95364-2F84-DB56-C7AB-9A39FA7913C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3AD95364-2F84-DB56-C7AB-9A39FA7913C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3AD95364-2F84-DB56-C7AB-9A39FA7913C1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9647D3FC-A5B8-5535-FF41-1872C1CB8066}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9647D3FC-A5B8-5535-FF41-1872C1CB8066}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9647D3FC-A5B8-5535-FF41-1872C1CB8066}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9647D3FC-A5B8-5535-FF41-1872C1CB8066}.Release|Any CPU.Build.0 = Release|Any CPU
+		{492F0128-63D5-0907-54D7-E70DA6B6F885}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{492F0128-63D5-0907-54D7-E70DA6B6F885}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{492F0128-63D5-0907-54D7-E70DA6B6F885}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{492F0128-63D5-0907-54D7-E70DA6B6F885}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35528CFE-2378-94FA-8171-AD7188E46AC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35528CFE-2378-94FA-8171-AD7188E46AC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35528CFE-2378-94FA-8171-AD7188E46AC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35528CFE-2378-94FA-8171-AD7188E46AC8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal
