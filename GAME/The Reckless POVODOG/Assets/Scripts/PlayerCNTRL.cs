@@ -15,8 +15,7 @@ public class PlayerCNTRL : MonoBehaviour {
 	public LayerMask layerMask;
 	//----------------------------
 	public GameObject[] attack;//Массив атак
-	public GameObject coord; //Координаты 1 атаки
-	private Vector2 coordV;
+
 
 	void Start ()
 	{
@@ -57,8 +56,6 @@ public class PlayerCNTRL : MonoBehaviour {
 	//-----------------------------------------COMBAT------------------------
 	void attackFirst()
 	{
-		coordV = coord.transform.position;
-		Instantiate (attack [0],coordV,Quaternion.identity);
 		anim.Play ("Attack", -1, 0f);
 	}
 	}
