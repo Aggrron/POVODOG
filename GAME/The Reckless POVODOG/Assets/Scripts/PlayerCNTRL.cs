@@ -7,14 +7,20 @@ public class PlayerCNTRL : MonoBehaviour {
 	private Rigidbody2D rb;
 	private Animator anim;
 	//-------------------------------------------
+	//--------STATS------------------------------------
 	public float speed = 5f;
 	public float jumpForce;
+	public float damage;
+	//---------------------------------------
 	private bool faceRight = true;
 	public bool isGrounded;
 	Transform grounded;
 	public LayerMask layerMask;
 	//----------------------------
 	public GameObject[] attack;//Массив атак
+	private GameObject attack1; 
+	private Vector2 coord;// Переменная координат атаки
+
 
 
 	void Start ()
@@ -49,17 +55,28 @@ public class PlayerCNTRL : MonoBehaviour {
 		faceRight = !faceRight;
 		transform.localScale = new Vector2 (transform.localScale.x * -1, transform.localScale.y);
 	}
-	void Jump()//Прыжок
+	 public void Jump()//Прыжок
 	{
 		rb.velocity = new Vector2 (rb.velocity.x, jumpForce);
 	}
 	//-----------------------------------------COMBAT------------------------
-	void attackFirst()
+	void attackFirst()  //Атака на левую кнопку мыши
 	{
 		anim.Play ("Attack", -1, 0f);
+		coord = new Vector2 (rb.transform.position.x - 0.04f, rb.transform.position.y + 0.05f);
+		attack1 = Instantiate (attack [0],coord,Quaternion.identity) as GameObject;
+		attack1.transform.parent = transform;
+		DestroyObject (attack1);
 	}
+	void DestroyObject(GameObject obj)//Уничтожение объектов
+	{
+		Destroy (obj,0.3f);
 	}
-	
+
+	//----------------------------------------------------------------------------------
+
+	}
+
 	
 	
 	
