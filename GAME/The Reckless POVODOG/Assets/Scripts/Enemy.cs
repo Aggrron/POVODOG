@@ -37,7 +37,7 @@ public class Enemy : MonoBehaviour {
 			transform.position = Vector2.MoveTowards (transform.position, fpsTarget.position, Time.deltaTime * esm);
 		} else
 			esm = 0f;
-		if (transform.position.x < fpsTarget.transform.position.x && faceRight) // Проеврка поворота ебальника
+		if (transform.position.x < fpsTarget.transform.position.x && faceRight) // Проверка поворота ебальника
 			flip ();
 		else if (transform.position.x > fpsTarget.transform.position.x && !faceRight)
 			flip ();
