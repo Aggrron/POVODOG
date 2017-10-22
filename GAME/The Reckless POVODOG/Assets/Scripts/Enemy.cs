@@ -27,6 +27,7 @@ public class Enemy : MonoBehaviour {
 	void Update()
 	{
 		anim.SetFloat ("MonsterSpeed", esm);
+
 	}
 	void FixedUpdate()
 	{
@@ -72,5 +73,6 @@ public class Enemy : MonoBehaviour {
 	{
 		DestroyObject (obj, 0.08f);
 	}
+
 
 }

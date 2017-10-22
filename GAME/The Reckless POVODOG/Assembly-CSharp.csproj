@@ -51,6 +51,7 @@
      <Compile Include="Assets\Scripts\Ladder.cs" />
      <Compile Include="Assets\Scripts\PlayerCNTRL.cs" />
      <Compile Include="Assets\Scripts\Respawn.cs" />
+     <Compile Include="Assets\Scripts\Spider.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
