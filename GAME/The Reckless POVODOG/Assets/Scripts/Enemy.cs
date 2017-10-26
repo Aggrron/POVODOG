@@ -14,7 +14,7 @@ public class Enemy : MonoBehaviour {
 	private Animator anim;
 	//------------------------------------------
 	public PlayerCNTRL player;
-	private float damage;
+	public float damage = 10f;
 	//------------------------------
 	public GameObject Yourself;
 

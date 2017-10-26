@@ -1,21 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerCNTRL : MonoBehaviour {
 	
 	private Rigidbody2D rb;
 	private Animator anim;
 	//-------------------------------------------
+	public Enemy enemy;
 	//--------STATS------------------------------------
 	public float speed = 5f;
 	public float jumpForce;
 	public float damage;
+	public float health = 30f;
 	//---------------------------------------
 	private bool faceRight = true;
 	public bool isGrounded;
 	Transform grounded;
 	public LayerMask layerMask;
+	public GameObject Yourself;
 	//----------------------------
 	public GameObject[] attack;//Массив атак
 	private GameObject attack1; 
@@ -72,6 +76,23 @@ public class PlayerCNTRL : MonoBehaviour {
 	{
 		Destroy (obj,0.3f);
 	}
+	void TakingHits()
+	{
+		health = health - enemy.damage;
+		if (health <= 0) 
+		{
+			SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex);
+		}
+	}
+	void OnTriggerEnter2D(Collider2D other) //Фиксация ударов
+	{
+		if (other.tag == "Enemy Attack") 
+		{
+			TakingHits ();	
+			Debug.Log ("Health is:" + health);
+		}
+	}
+
 
 	//----------------------------------------------------------------------------------
 
